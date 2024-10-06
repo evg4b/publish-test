@@ -29,10 +29,13 @@ jobs:
         with:
           distribution: goreleaser
           version: v1.26
-          args: release --clean --snapshot
+          args: build --clean
 
       - name: TOCKEN CHECK
         run: echo ${{ secrets.NPM_TOKEN }}
+
+      - name: Authenticate with private NPM package
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
 
       - name: Test Local Action
         id: test-action
