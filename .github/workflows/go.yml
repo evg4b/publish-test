@@ -33,6 +33,6 @@ jobs:
 
       - name: Test Local Action
         id: test-action
-        uses: evg4b/goreleaser-npm-publisher-action@v2
+        uses: evg4b/goreleaser-npm-publisher-action@v3
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
