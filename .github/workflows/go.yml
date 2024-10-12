@@ -32,13 +32,11 @@ jobs:
           args: build --clean
 
       - name: TOCKEN CHECK
-        run: echo ${{ secrets.NPM_TOKEN }}
+        run: echo ${{ secrets.TOKEN }}
 
       - name: Test Local Action
         id: test-action
         uses: evg4b/goreleaser-npm-publisher-action@v0.0.3
         with:
-          token: ${{ secrets.NPM_TOKEN }}
-
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          token: ${{ secrets.TOKEN }}
+          prefix: '@evg4b'
