@@ -34,11 +34,11 @@ jobs:
       - name: TOCKEN CHECK
         run: echo ${{ secrets.NPM_TOKEN }}
 
-      - name: Authenticate with private NPM package
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
-
       - name: Test Local Action
         id: test-action
-        uses: evg4b/goreleaser-npm-publisher-action@v4
+        uses: evg4b/goreleaser-npm-publisher-action@v1.0.0-alpha.1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
