@@ -36,7 +36,7 @@ jobs:
 
       - name: Test Local Action
         id: test-action
-        uses: evg4b/goreleaser-npm-publisher-action@v1.0.0-alpha.2
+        uses: evg4b/goreleaser-npm-publisher-action@v0.0.3
         with:
           token: ${{ secrets.NPM_TOKEN }}
 
