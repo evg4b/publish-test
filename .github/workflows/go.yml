@@ -39,4 +39,4 @@ jobs:
         uses: evg4b/goreleaser-npm-publisher-action@v0.0.3
         with:
           token: ${{ secrets.TOKEN }}
-          prefix: '@evg4b'
+          prefix: '@wserdtryftvubhijnokmpl'
