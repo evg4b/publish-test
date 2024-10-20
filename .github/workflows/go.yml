@@ -34,6 +34,7 @@ jobs:
       - name: TOCKEN CHECK
         run: >
          echo ${{ secrets.TOKEN }};
+         pwd;
          ls -la;
 
       - name: Test Local Action
