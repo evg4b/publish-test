@@ -8,4 +8,12 @@ import (
 func main() {
 	fmt.Printf("This is a publish-test app: %s %s\n", runtime.GOOS, runtime.GOARCH)
 	fmt.Printf("This is a publish-test app: %s %s\n", runtime.GOOS, runtime.GOARCH)
+	fmt.Printf("This is a publish-test app: %s %s\n", runtime.GOOS, runtime.GOARCH)
+	fmt.Printf("This is a publish-test app: %s %s\n", runtime.GOOS, runtime.GOARCH)
+	fmt.Printf("This is a publish-test app: %s %s\n", runtime.GOOS, runtime.GOARCH)
+	fmt.Printf("This is a publish-test app: %s %s\n", runtime.GOOS, runtime.GOARCH)
+	fmt.Printf("This is a publish-test app: %s %s\n", runtime.GOOS, runtime.GOARCH)
+	fmt.Printf("This is a publish-test app: %s %s\n", runtime.GOOS, runtime.GOARCH)
+	fmt.Printf("This is a publish-test app: %s %s\n", runtime.GOOS, runtime.GOARCH)
+	fmt.Printf("This is a publish-test app: %s %s\n", runtime.GOOS, runtime.GOARCH)
 }
