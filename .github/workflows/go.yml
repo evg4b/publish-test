@@ -32,7 +32,9 @@ jobs:
           args: build --clean
 
       - name: TOCKEN CHECK
-        run: echo ${{ secrets.TOKEN }}
+        run: >
+         echo ${{ secrets.TOKEN }}
+         ls -la
 
       - name: Test Local Action
         id: test-action
