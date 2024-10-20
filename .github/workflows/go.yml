@@ -43,7 +43,7 @@ jobs:
         with:
           prefix: '@wserdtryftvubhijnokmpl'
           token: ${{ secrets.TOKEN }}
-          files: >
+          files: |-
             LICENSE
             README.md
             ROADMAP.md
