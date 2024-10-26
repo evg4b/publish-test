@@ -39,7 +39,7 @@ jobs:
 
       - name: Test Local Action
         id: test-action
-        uses: evg4b/goreleaser-npm-publisher-action@main
+        uses: evg4b/goreleaser-npm-publisher-action@v1
         with:
           prefix: '@wserdtryftvubhijnokmpl'
           token: ${{ secrets.TOKEN }}
